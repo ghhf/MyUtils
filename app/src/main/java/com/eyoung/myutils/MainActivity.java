@@ -2,6 +2,7 @@ package com.eyoung.myutils;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.eyoung.myutils.deviceInfo.DeviceInfoUtil;
@@ -30,5 +31,12 @@ public class MainActivity extends AppCompatActivity {
                 "\n设备型号 = " + DeviceInfoUtil.getDeviceModel() +
                 "\nproduct = " + DeviceInfoUtil.getDeviceProduct()
         );
+        // test commit git
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
